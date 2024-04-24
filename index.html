@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Exercicio Site</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-logo">
+            <img src="img/images.png" alt="LOGO" class="imagemLogo">
+        </nav>
+        <nav>
+            <ul class="nav">
+                <a href="#sectionSinopse">
+                <li class="nav-item">Menu</li>
+                </a>
+                <a href="#sectionCartaz">
+                <li class="nav-item">Filmes</li>
+                </a>
+                <li class="nav-item">Sessões</li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="tituloSite">Filmes em Cartaz</h1>
+    <main>
+            <section id="sectionSinopse">
+                    <div class="container">
+                            <div class="filme01">
+                        <h1 class="tituloCaixa1">Harry Potter e o Cálice de Fogo</h1>
+                            <div class="cartazHarry">
+                                <img src="img/harry-potter-e-o-calice-de-fogo.jpg" alt="Imagem Harry">
+                            </div>
+                                <p>
+                                    Harry retorna para seu quarto ano na Escola de Magia e Bruxaria de Hogwarts, 
+                                    junto com os seus amigos Ron e Hermione. Desta vez, acontece um torneio entre as 
+                                    três maiores escola de magia, com um participante selecionado de cada escola, pelo Cálice de Fogo. 
+                                    O nome de Harry aparece, mesmo não tendo se inscrito, e ele precisa competir.
+                                </p>
+                                <h2 class="tituloTrailer01"> Trailer</h2>
+                                    <div class="trailer01">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cVKkL4O60IM?si=cCX1Sm8xzz2lUray" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <h2 class="textoAudio">Audio Sinopse</h2>
+                                    <div class="audioJogos">
+                                        <audio id="somHarry" controls>
+                                            <source scr="audio/ttsmaker-file-2024-4-17-20-15-6.mp3" type="audio/mp3"></source>
+                                        </audio>
+                                    </div> 
+                            </div>
+                    <div class="filme02">
+                        <h1 class="tituloCaixa2">Jogos Vorazes</h1>
+                            <div class="cartazJogo">
+                                <img src="img/images (2).jpg" alt="Imagem Katiniss">
+                            </div>
+                                <p>
+                                    Na região antigamente conhecida como América do Norte, a Capital de Panem controla 12 distritos
+                                    e os força a escolher um garoto e uma garota, conhecidos como tributos, para competir em um evento anual televisionado.
+                                    Todos os cidadãos assistem aos temidos jogos, no qual os jovens lutam até a morte,
+                                    de modo que apenas um saia vitorioso. A jovem Katniss Everdeen, do Distrito 12, confia na habilidade de caça e 
+                                    na destreza com o arco, além dos instintos aguçados, nesta competição mortal.
+                                </p>
+                                <h2 class="tituloTrailer02">Trailer</h2>
+                                    <div class="trailer02">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PbA63a7H0bo?si=Xn04ijrkzg6GvoKh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                <h2 class="textoAudio">Audio Sinopse</h2>
+                                    <div class="audioJogos">
+                                        <audio id="somJogos" controls>
+                                            <source scr="audio/ttsmaker-file-2024-4-17-20-11-49.mp3" type="audio/mp3"></source>
+                                        </audio>
+                                    </div>
+                    </div> 
+                </div>
+            </section>         
+        
+            <section id="sectionCartaz"> 
+        <div class="filmesEmExibicao">
+            <div class="galeriaFilmes">
+                <h1 class="tituloFilmesEmExibicao">Filme em Exibição</h1>
+                <div class="listaFilmes">
+                    <img src="img/images (4).jpg" alt="Filme 01" height="250px">
+                    <img src="img/images (4).jpg" alt="Filme 02" height="250px">
+                    <img src="img/images (4).jpg" alt="Filme 03" height="250px">
+                    <img src="img/images (4).jpg" alt="Filme 04" height="250px">
+                    <img src="img/images (4).jpg" alt="Filme 05" height="250px">
+                </div>
+            </div>
+        </div>
+            </section>
+    </main>
+    
+    <form action="" class="Falecomagente">
+        <div class="imagemForm">
+            <img src="../img/images (5).jpg" alt="imagem Form">
+        </div> 
+        <label for="" class="nomeLabel">Nome</label>
+        <input type="text" class="inputFale" name="input" placeholder="Digite aqui">
+
+        <label for="" class="emailLabel">Email</label>
+        <input type="text" class="inputFale" name="input" placeholder="Digite aqui">
+         
+        <label for="" class="nomeLabel"> Faixa Etaria</label>
+
+        <div class="botaoRadio">
+
+            <input type="radio" name="idade" value="novo">
+            <label class="nomeRadio">Novo</label>
+
+            <input type="radio" name="idade" value="maismenosNovo">
+            <label for="" class="nomeradio">Mais ou menos Novo</label>
+
+            <input type="radio" name="idade" value="velho">
+            <label for="" class="nomeradio">Velho</label>
+            
+        </div>
+        
+        <label for="" class="nomeLabelinteresse">Grau de interesse</label>
+        <div class="interesseCheck">
+
+            <input type="checkbox" name="" id="1">
+            <label for="" class="interesseLabel">Normal</label>
+
+            <input type="checkbox" name="" id="2">
+            <label for="" class="interesseLabel">Interessado</label>
+
+            <input type="checkbox" name="" id="3">
+            <label for="" class="interesseLabel">Muito Interessado</label>
+        </div>
+
+        <label class="nomeLabel">Comentario</label>
+        <textarea name="text" class="textarea"></textarea>
+        
+        <button class="enviar">Enviar</button>
+    </form>
+    <footer>
+        <h4 class="tituloRodape">Todos os direitos reservados</h4>
+    </footer>
+    
+</body>
+</html>
