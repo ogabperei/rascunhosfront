@@ -1,0 +1,41 @@
+.grid{
+    display: grid;
+}
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+
+.content-main{
+    grid-area: content-main;
+}
+.content-right{
+    grid-area: content-right;
+}
+.content-left{
+    grid-area: content-left;
+}
+.footer{
+    grid-area: footer;
+}
+.gridtemplate{
+    grid-template: 
+    "header header header" 150px
+    "nav nav nav" 50px
+    "content-left content-main content-right" 400px
+    "footer footer footer" 100px
+    / 200px 2fr 200px
+    ;
+}
+.item{
+    background-color: rgb(106, 109, 252);
+    text-align: center;
+    font-size: 1.5em;
+    margin: 5px;
+} 
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
