@@ -1,41 +1,68 @@
-.grid{
+@import url(https://db.onlinewebfonts.com/c/e8fafd4bab1ff229bb62067775369b8d?family=Thunderhouse+Pro);
+
+.grid {
     display: grid;
 }
-.header{
+
+.header {
     grid-area: header;
-}
-.nav{
-    grid-area: nav;
+    font-size: 80px !important;
 }
 
-.content-main{
-    grid-area: content-main;
+.nav {
+    grid-area: nav;
+    padding-bottom: 15px;
 }
-.content-right{
+
+.content-main {
+    grid-area: content-main;
+    /* font-size: 120px !important; */
+}
+
+.content-right {
     grid-area: content-right;
 }
-.content-left{
+
+.content-left {
     grid-area: content-left;
 }
-.footer{
+
+.footer {
     grid-area: footer;
 }
-.gridtemplate{
-    grid-template: 
-    "header header header" 150px
-    "nav nav nav" 50px
-    "content-left content-main content-right" 400px
-    "footer footer footer" 100px
-    / 200px 2fr 200px
+
+.gridtemplate {
+    grid-template:
+        "header header header" 150px
+        "nav nav nav" 80px
+        "content-left content-main content-right" 400px
+        "footer footer footer" 100px
+        / 200px 2fr 200px
     ;
 }
-.item{
-    background-color: rgb(106, 109, 252);
+
+.item {
+    background-color: rgb(252, 106, 106);
     text-align: center;
-    font-size: 1.5em;
-    margin: 5px;
-} 
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    font-size: 1.7em;
+    margin: 2px;
+    align-content: center;
 }
+
+* {
+    font-family: 'Thunderhouse Pro';
+    color: white;
+    border-radius: 20px;
+}
+
+.content-main {
+    display: grid;
+    grid-template-rows: 50px 200px 50px;
+    gap: 15px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+
+
