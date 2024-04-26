@@ -6,7 +6,7 @@
 
 .header {
     grid-area: header;
-    font-size: 80px !important;
+    
 }
 
 .nav {
@@ -16,7 +16,6 @@
 
 .content-main {
     grid-area: content-main;
-    /* font-size: 120px !important; */
 }
 
 .content-right {
@@ -50,7 +49,7 @@
 }
 
 * {
-    font-family: 'Thunderhouse Pro';
+    font-family:'thunderhouse pro';
     color: white;
     border-radius: 20px;
 }
@@ -61,8 +60,70 @@
     gap: 15px;
     justify-content: center;
     align-content: center;
-    
+
 }
 
+@media screen and (max-width: 850px){
+    .gridtemplate {
+        grid-template:
+            "header" 60px
+            "nav" 50px
+            "content-left" 1fr
+            "content-main" 4fr
+            "content-right" 1fr
+            "footer" 50px
+            / 1fr
+        ;
+    }
+    .item{
+        background-color: rgb(169, 108, 226);
+    }
+}
+.mainheader{
+    background-color: rgb(202, 80, 80);
+    width: 800px;
+    align-content: center;
+    color: black;
 
+    @media screen and (max-width: 850px) {
+        background-color: rgb(109, 235, 107);
+    width: 800px;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    }
+}
+.mainarticle{
+    background-color: rgb(202, 80, 80);
+    width: 800px;
+    align-content: center;
+    color: black;
+    @media screen and (max-width: 850px) {
+        background-color: rgb(109, 235, 107);
+    width: 800px;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    }
+}
+.mainfooter{
+    background-color: rgb(202, 80, 80);
+    width: 800px;
+    align-content: center;
+    color: black;
+    @media screen and (max-width: 850px) {
+        background-color: rgb(109, 235, 107);
+    width: 800px;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    }
+}
+.nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+}
 
+.navbar.bg-body-tertiary{
+    background-color: rgba(0, 0, 255, 0)!important;
+}
