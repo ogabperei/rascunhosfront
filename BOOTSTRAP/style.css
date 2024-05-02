@@ -1,27 +1,48 @@
 @import url(https://db.onlinewebfonts.com/c/e8fafd4bab1ff229bb62067775369b8d?family=Thunderhouse+Pro);
 
+
 .grid{
     display: grid;
-    gap: 10px;
+    gap: 20px;
     height: 100vh;
     padding: 0;
     border: 0;
 }
 
 .item{
-    background: rgba(236, 219, 105, 0.426);
+    background: rgba(6, 126, 247, 0.426);
     text-align: center;
     font-size: 15px;
 }
 
 .grid-template{
     grid-template: 
-    "header"  150px
-    "Section01" 700px
-    "Section02" 500px
-    "Section03" 500px
-    "footer" 100px
-    / 1fr ;
+    "header"  60px
+    "section01" 500px
+    "section02" 330px
+    "section03" 500px
+    "footer" 80px
+    / 1fr;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.section01{
+    grid-area: section01;
+}
+
+.section02{
+    grid-area: section02;
+}
+
+.section03{
+    grid-area: section03;
+}
+
+.header{
+    grid-area: header;
 }
 
 .header{
@@ -36,10 +57,9 @@
     z-index: 1000;
     height: 15%;
     font-family: "Thunderhouse Pro";
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.238);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.581);
     border-radius: 0px 0px 100px 100px;
 }
-
 
 .navbar.bg-body-tertiary{
     background-color: rgba(0, 0, 255, 0)!important;
@@ -55,6 +75,17 @@
     padding: 0px 0px 10px 0px !important;
 }
 
-/* .Section01{
-    margin-top:  100px;
-} */
+.section01{
+    width: 100% !important;
+    justify-content: center !important;
+}
+.carousel-slide{
+    justify-content: center;
+}
+.g-3{
+    font-family: 'Thunderhouse Pro';
+    align-content: center !important;
+}
+.g-3{
+    padding: 20px;
+}
